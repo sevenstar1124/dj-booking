@@ -1,0 +1,57 @@
+import os
+
+from setuptools import find_packages, setup
+
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
+    README = readme.read()
+
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+
+requirements = [
+    "asgiref>=3",
+    "backports.zoneinfo>=0.2",
+    "Django>=4.",
+    "django-formtools>=2",
+    "pycodestyle>=2",
+    "sqlparse>=0.4",
+    "toml>=0.10"
+]
+
+setup(
+    name='dj-booking',
+    version='1.6.2',
+    description='Django Booking is a complete Django booking system as a package.',
+    long_description=README,
+    long_description_content_type='text/markdown',
+    url='https://github.com/andreislusari/dj-booking',
+    author='Andrei',
+    author_email='andreislusari.guru@gmail.com',
+    license='MIT',
+    maintainer='Andrei',
+    maintainer_email='andreislusari.guru@gmail.com',
+    keywords='django booking appointment appointment-booking booking-system appointment-system doctor-appointment-booking django-appointment django-booking',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=requirements,
+    classifiers=[
+        'Environment :: Web Environment',
+        "Framework :: Django",
+        "Framework :: Django :: 2.2",
+        "Framework :: Django :: 3.2",
+        "Framework :: Django :: 4.0",
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
+)

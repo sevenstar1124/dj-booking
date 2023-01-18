@@ -72,11 +72,11 @@ The App
 
 - booking page
 
-  ![booking page](https://github.com/andreislusari/dj-booking/blob/main/docs/img/1.png?raw=true)
+  ![booking page](https://github.com/andreislusari/dj-booking/blob/master/docs/img/1.png?raw=true)
 
 - Admin Page
 
-  ![booking page](https://github.com/andreislusari/dj-booking/blob/main/docs/img/2.png?raw=true)
+  ![booking page](https://github.com/andreislusari/dj-booking/blob/master/docs/img/2.png?raw=true)
   
 
 Getting Involved
